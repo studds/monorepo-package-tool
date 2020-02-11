@@ -14,7 +14,7 @@
         "monorepo-package-tool": "bin/mpt.js"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prepublishOnly": "tsc"
     },
     "author": "Daniel Studds",
     "homepage": "https://github.com/studds/monorepo-package-tool#readme",
