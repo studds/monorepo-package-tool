@@ -6,6 +6,7 @@
 /out-tsc
 serverless-output.yaml
 *.js
+*.tgz
 
 # dependencies
 /node_modules
