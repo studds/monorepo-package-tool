@@ -1,80 +1,61 @@
-# Product Name
+<h1 align="center">Welcome to monorepo-package-tool 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D6.0.0-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D10.0.0-blue.svg" />
+  <a href="https://github.com/studds/monorepo-package-tool#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/studds/monorepo-package-tool/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/studds/monorepo-package-tool/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/studds/monorepo-package-tool" />
+  </a>
+</p>
 
 > A wee tool for syncing package.json files in a monorepo with multiple publishable packages, but a single main package.json
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+### 🏠 [Homepage](https://github.com/studds/monorepo-package-tool#readme)
 
-One to two paragraph statement about your product and what it does.
+## Prerequisites
 
-![](header.png)
+-   npm >=6.0.0
+-   node >=10.0.0
 
-## Installation
-
-OS X & Linux:
+## Install
 
 ```sh
-npm install my-crazy-module --save
+npm install monorepo-package-tool
 ```
 
-Windows:
+## Usage
 
 ```sh
-edit autoexec.bat
+npx monorepo-package-tool
 ```
 
-## Usage example
+## Author
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+👤 **Daniel Studds**
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+-   Website: https://danielstudds.com
+-   Github: [@studds](https://github.com/studds)
+-   LinkedIn: [@studds](https://linkedin.com/in/studds)
 
-## Development setup
+## 🤝 Contributing
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/studds/monorepo-package-tool/issues).
 
-```sh
-make install
-npm test
-```
+## Show your support
 
-## Release History
+Give a ⭐️ if this project helped you!
 
--   0.2.1
-    -   CHANGE: Update docs (module code remains unchanged)
--   0.2.0
-    -   CHANGE: Remove `setDefaultXYZ()`
-    -   ADD: Add `init()`
--   0.1.1
-    -   FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
--   0.1.0
-    -   The first proper release
-    -   CHANGE: Rename `foo()` to `bar()`
--   0.0.1
-    -   Work in progress
+## 📝 License
 
-## Meta
+Copyright © 2020 [Daniel Studds](https://github.com/studds).<br />
+This project is MIT licensed.
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+---
 
-Distributed under the XYZ license. See `LICENSE` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## Contributing
-
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-<!-- Markdown link & img dfn's -->
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

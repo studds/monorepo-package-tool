@@ -10,12 +10,14 @@
     ],
     "main": "src/index.js",
     "bin": {
-        "mpt": "bin/mpt.js"
+        "mpt": "bin/mpt.js",
+        "monorepo-package-tool": "bin/mpt.js"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "pubdan@fastmail.com",
+    "author": "Daniel Studds",
+    "homepage": "https://github.com/studds/monorepo-package-tool#readme",
     "license": "MIT",
     "devDependencies": {
         "@types/mkdirp": "^1.0.0",
@@ -34,13 +36,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/kefranabg/readme-md-generator.git"
+        "url": "git+https://github.com/studds/monorepo-package-tool.git"
     },
     "bugs": {
-        "url": "https://github.com/kefranabg/readme-md-generator/issues"
+        "url": "https://github.com/studds/monorepo-package-tool/issues"
     },
     "engines": {
-        "npm": ">=5.5.0",
-        "node": ">=9.3.0"
+        "npm": ">=6.0.0",
+        "node": ">=10.0.0"
     }
 }
