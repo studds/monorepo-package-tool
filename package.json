@@ -1,0 +1,46 @@
+{
+    "name": "monorepo-package-tool",
+    "version": "1.0.0",
+    "description": "A wee tool for syncing package.json files in a monorepo with multiple publishable packages, but a single main package.json",
+    "keywords": [
+        "package.json",
+        "monorepo",
+        "sync",
+        "dependencies"
+    ],
+    "main": "src/index.js",
+    "bin": {
+        "mpt": "bin/mpt.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "pubdan@fastmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/mkdirp": "^1.0.0",
+        "@types/node": "^13.7.0",
+        "@types/yargs": "^15.0.3",
+        "typescript": "^3.7.5"
+    },
+    "dependencies": {
+        "globby": "^11.0.0",
+        "mkdirp": "^1.0.3",
+        "precinct": "^6.2.0",
+        "yargs": "^15.1.0"
+    },
+    "peerDependencies": {
+        "typescript": ">= 3.6.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kefranabg/readme-md-generator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kefranabg/readme-md-generator/issues"
+    },
+    "engines": {
+        "npm": ">=5.5.0",
+        "node": ">=9.3.0"
+    }
+}
