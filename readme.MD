@@ -32,8 +32,28 @@ npm install monorepo-package-tool
 ## Usage
 
 ```sh
-npx monorepo-package-tool
+npx monorepo-package-tool [--rootModuleDir libs] [--destDir dist]
 ```
+
+Inject dependencies etc into package.json for multiple packages under `./libs`,
+and copy to the `./dist/{package-path}` dir:
+
+```sh
+npx monorepo-package-tool --rootModuleDir libs
+```
+
+Inject dependencies etc into a single package, and copy to `dist/example` dir:
+
+```sh
+npx monorepo-package-tool --rootModuleDir libs/example --destDir dist/example
+```
+
+### Options
+
+**--rootModuleDir** (default: packages): Path to submodule root directory - will search for package.json files under here
+**--destDir** (default: dist): Output dir - if missing, will attempt to derive from tsconfig.json
+
+### Examples
 
 ## Author
 
