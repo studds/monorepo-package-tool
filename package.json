@@ -1,6 +1,6 @@
 {
     "name": "monorepo-package-tool",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A wee tool for syncing package.json files in a monorepo with multiple publishable packages, but a single main package.json",
     "keywords": [
         "package.json",
