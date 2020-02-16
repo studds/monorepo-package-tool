@@ -19,7 +19,7 @@ export function getDependenciesForModule(
             pack.peerDependencies
         );
         if (scope && dependencyName.startsWith(scope)) {
-            dependencies[dependencyName] = pack.version;
+            peerDependencies[dependencyName] = pack.version;
         } else if (version) {
             dependencies[dependencyName] = version;
         } else if (peerVersion) {
