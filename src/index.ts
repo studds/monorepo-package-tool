@@ -4,7 +4,7 @@ import { copyPackage } from './copyPackage';
 
 export function populatePackageJson(rootModuleDir: string, destDir: string) {
     const pack = JSON.parse(readFileSync('./package.json', 'utf-8'));
-    const moduleGlob = `*/package.json`;
+    const moduleGlob = `**/package.json`;
     const packagePaths = glob(moduleGlob, {
         cwd: rootModuleDir,
         absolute: true
