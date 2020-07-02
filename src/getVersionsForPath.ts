@@ -5,8 +5,9 @@ import { getDependenciesForModule } from './getDependenciesForModule';
 
 export function getDependenciesForModulePath(
     modulePath: string,
-    pack: PackageJson
+    pack: PackageJson,
+    options: { scopeDepsArePeers: boolean }
 ) {
     const deps = inspectCodeForDependencies(glob(`${modulePath}/**/*.ts`));
-    return getDependenciesForModule(pack, deps);
+    return getDependenciesForModule(pack, deps, options);
 }

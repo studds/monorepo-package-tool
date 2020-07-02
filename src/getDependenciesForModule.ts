@@ -2,12 +2,13 @@ import { findVersionForDep } from './findVersionForDep';
 import { PackageJson } from './PackageJson';
 export function getDependenciesForModule(
     pack: PackageJson,
-    importNames: string[]
+    importNames: string[],
+    options: { scopeDepsArePeers: boolean }
 ) {
     const scope = pack.name.split('/')[0];
     const dependencies: Record<string, string> = {};
     const peerDependencies: Record<string, string> = {};
-    importNames.forEach(importName => {
+    importNames.forEach((importName) => {
         const [importScope, packageName] = importName.split('/');
         const dependencyName =
             importScope.startsWith('@') && packageName
@@ -19,7 +20,11 @@ export function getDependenciesForModule(
             pack.peerDependencies
         );
         if (scope && dependencyName.startsWith(scope)) {
-            peerDependencies[dependencyName] = pack.version;
+            if (options.scopeDepsArePeers) {
+                peerDependencies[dependencyName] = pack.version;
+            } else {
+                dependencies[dependencyName] = pack.version;
+            }
         } else if (version) {
             dependencies[dependencyName] = version;
         } else if (peerVersion) {

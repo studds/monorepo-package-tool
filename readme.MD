@@ -32,7 +32,7 @@ npm install monorepo-package-tool
 ## Usage
 
 ```sh
-npx monorepo-package-tool [--rootModuleDir libs] [--destDir dist]
+npx monorepo-package-tool [--rootModuleDir libs] [--destDir dist] [--scopeDepsArePeers]
 ```
 
 Inject dependencies etc into package.json for multiple packages under `./libs`,
@@ -52,6 +52,7 @@ npx monorepo-package-tool --rootModuleDir libs/example --destDir dist/example
 
 **--rootModuleDir** (default: packages): Path to submodule root directory - will search for package.json files under here
 **--destDir** (default: dist): Output dir - if missing, will attempt to derive from tsconfig.json
+**--scopeDepsArePeers** (default: false): Prior to version 2, dependencies in the same scope were added as peer dependencies, now the default is to add them as dependencies
 
 ### Examples
 

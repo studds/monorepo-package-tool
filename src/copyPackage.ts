@@ -8,13 +8,15 @@ export function copyPackage(
     rootModuleDir: string,
     packagePath: string,
     pack: PackageJson,
-    rootDestDir: string | undefined
+    rootDestDir: string | undefined,
+    options: { scopeDepsArePeers: boolean }
 ) {
     const modulePack = JSON.parse(readFileSync(packagePath, 'utf-8'));
     const moduleDir = dirname(packagePath);
     const { dependencies, peerDependencies } = getDependenciesForModulePath(
         moduleDir,
-        pack
+        pack,
+        options
     );
     modulePack.dependencies = dependencies;
     modulePack.peerDependencies = peerDependencies;
@@ -24,7 +26,7 @@ export function copyPackage(
         modulePack.repository = {
             directory: relative(process.cwd(), moduleDir),
             type: 'git',
-            url: repository
+            url: repository,
         };
     } else if (repository) {
         modulePack.repository = { ...repository, directory: moduleDir };
