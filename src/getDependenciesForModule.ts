@@ -5,7 +5,9 @@ export function getDependenciesForModule(
     importNames: string[],
     options: { scopeDepsArePeers: boolean }
 ) {
-    const scope = pack.name.split('/')[0];
+    const scope = pack.name.startsWith('@')
+        ? pack.name.split('/')[0]
+        : `@${pack.name}`;
     const dependencies: Record<string, string> = {};
     const peerDependencies: Record<string, string> = {};
     importNames.forEach((importName) => {
