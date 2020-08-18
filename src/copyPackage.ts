@@ -21,6 +21,8 @@ export function copyPackage(
     modulePack.dependencies = dependencies;
     modulePack.peerDependencies = peerDependencies;
     modulePack.version = pack.version;
+    modulePack.license = pack.license;
+    modulePack.author = pack.author;
     const repository = pack.repository;
     if (typeof repository === 'string') {
         modulePack.repository = {

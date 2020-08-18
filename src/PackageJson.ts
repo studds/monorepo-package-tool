@@ -5,4 +5,6 @@ export interface PackageJson {
     devDependencies?: Record<string, string>;
     peerDependencies?: Record<string, string>;
     repository?: string | { directory?: string; type: string; url: string };
+    author?: any;
+    license?: any;
 }
