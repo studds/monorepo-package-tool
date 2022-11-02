@@ -1,4 +1,4 @@
-import { sync as glob } from 'globby';
+import { globbySync as glob } from 'globby';
 import { PackageJson } from './PackageJson';
 import { inspectCodeForDependencies } from './inspectCodeForDependencies';
 import { getDependenciesForModule } from './getDependenciesForModule';

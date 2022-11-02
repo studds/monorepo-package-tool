@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { sync as glob } from 'globby';
+import { globbySync as glob } from 'globby';
 import { copyPackage } from './copyPackage';
 
 export function populatePackageJson(

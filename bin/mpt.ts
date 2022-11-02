@@ -26,6 +26,6 @@ const { rootModuleDir, destDir, scopeDepsArePeers } = yargs
         required: false,
         default: false,
     })
-    .parse();
+    .parseSync();
 
 populatePackageJson(resolve(rootModuleDir), destDir, { scopeDepsArePeers });
